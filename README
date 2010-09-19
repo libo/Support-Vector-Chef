@@ -9,6 +9,7 @@ http://www.igvita.com/2008/01/07/support-vector-machines-svm-in-ruby/
 
 == Getting Started
 
+bundle install
 rake db:migrate
 rake db:seed
 rails server
