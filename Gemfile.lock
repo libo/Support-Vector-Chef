@@ -41,6 +41,8 @@ GEM
       activesupport (>= 2.3.6)
       mime-types
       treetop (>= 1.4.5)
+    memcache-client (1.8.5)
+    memcached (1)
     mime-types (1.16)
     polyglot (0.3.1)
     rack (1.2.1)
@@ -86,6 +88,8 @@ PLATFORMS
 DEPENDENCIES
   haml
   libsvm-ruby-swig
+  memcache-client
+  memcached
   rails (= 3.0.0)
   rspec-rails (>= 2.0.0.beta.22)
   sqlite3-ruby

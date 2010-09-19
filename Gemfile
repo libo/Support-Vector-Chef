@@ -8,6 +8,8 @@ gem 'rails', '3.0.0'
 gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'haml'
 gem 'libsvm-ruby-swig'
+gem 'memcached'
+gem 'memcache-client'
 
 # Use unicorn as the web server
 # gem 'unicorn'
