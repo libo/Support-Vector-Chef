@@ -34,6 +34,7 @@ class Recipe < ActiveRecord::Base
 
   def ingredients_quantity
     return @ingredients_quantity if @ingredients_quantity.present?
-    ApplicationSettings::DEFAULT_QUANTITY
+    quantities = ApplicationSettings::DEFAULT_QUANTITIES
+    quantities[rand(quantities.length)]
   end
 end
