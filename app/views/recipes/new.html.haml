@@ -1,4 +1,4 @@
-= flash[:notice]
+
 
 %h1
   I have made up this new recipe for you
@@ -21,3 +21,7 @@
     %input{:type=>"hidden", :name=>"recipe[ingredient_ids][]", :value => ingredient.id}
   = f.submit "OK, I can eat it without puking", :name=>"approved"
   = f.submit "No sorry, I really think it's disgusting"
+
+%hr
+%p
+  = link_to "Teach me new ingredients", new_ingredient_url

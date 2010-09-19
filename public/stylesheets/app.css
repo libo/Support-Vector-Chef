@@ -1,0 +1,10 @@
+#notice{
+  padding:8px;
+  border: 1px solid #009900;
+  background-color: #ccffcc;
+}
+#error{
+  padding:8px;
+  border: 1px solid #990000;
+  background-color: #ffcccc;
+}

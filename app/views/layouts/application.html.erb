@@ -23,7 +23,8 @@
   <a href="http://github.com/libo/Support-Vector-Chef">
     <img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" />
   </a>
-
+<% if flash[:notice].present? %><div id="notice"><%= flash[:notice] %></div><% end %>
+<% if flash[:error].present? %><div id="error"><%= flash[:error] %></div><% end %>
 <%= yield %>
 
 </body>

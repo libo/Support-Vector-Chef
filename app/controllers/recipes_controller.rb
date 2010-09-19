@@ -9,7 +9,7 @@ class RecipesController < ApplicationController
     @recipe = Recipe.new(params[:recipe].merge(:approved=>approved))
     if @recipe.save!
       if approved
-        flash[:notice] = 'I happy you liked! Thank you for your feedback, I will use to make new recipies'
+        flash[:notice] = 'I am happy you liked! Thank you for your feedback, I will use it to make new recipies'
       else
         flash[:notice] = 'Sorry :-( It takes time to learn how to cook for humans'
       end

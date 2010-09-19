@@ -1,0 +1,13 @@
+%h1 Ingredients
+
+%p Please tell me about your favourite ingredient
+= form_for @ingredient do |f|
+  = f.text_field :name
+  = f.submit "Create"
+%p
+  I know about
+  = @ingredients.count
+  ingredients:
+%ul
+  - @ingredients.each do |i|
+    %li= h i.name.capitalize
