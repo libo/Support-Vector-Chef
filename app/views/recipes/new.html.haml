@@ -8,6 +8,12 @@
     %li= ingredient.name
 
 %h2
+  - if @recipe.prediction == 0
+    I personally believe this is disgusting
+  - else
+    I believe it's comestible, but I am not an expert of human taste
+
+%h2
   Would you like to eat it?
 
 = form_for @recipe do |f|

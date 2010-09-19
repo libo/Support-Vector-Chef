@@ -1,6 +1,7 @@
 class RecipesController < ApplicationController
   def new
     @recipe = Recipe.create(:ingredients_quantity => params[:qty])
+    @recipe.populate_ingredients
   end
 
   def create
