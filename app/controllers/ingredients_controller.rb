@@ -10,7 +10,7 @@ class IngredientsController < ApplicationController
       flash[:notice] = "Thank you for your input, I will try to experiment with #{@ingredient.name} soon"
       redirect_to(new_recipe_url)
     else
-      flash[:error] = "I couldn't save ingredient #{params[:ingredient]['name']}"
+      flash[:error] = "I couldn't add the ingredient #{params[:ingredient]['name']}, probably I already know it"
       render :new
     end
   end

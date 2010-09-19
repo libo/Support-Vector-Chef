@@ -4,6 +4,7 @@
 = form_for @ingredient do |f|
   = f.text_field :name
   = f.submit "Create"
+  = link_to "Go back to recipes", new_recipe_url
 %p
   I know about
   = @ingredients.count
