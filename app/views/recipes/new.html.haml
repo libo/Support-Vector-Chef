@@ -1,0 +1,17 @@
+= flash[:notice]
+
+%h1
+  I have made up this new recipe for you
+
+%ul
+  - @recipe.ingredients.each do |ingredient|
+    %li= ingredient.name
+
+%h2
+  Would you like to eat it?
+
+= form_for @recipe do |f|
+  - @recipe.ingredients.each do |ingredient|
+    %input{:type=>"hidden", :name=>"recipe[ingredient_ids][]", :value => ingredient.id}
+  = f.submit "OK, I can eat it without puking", :name=>"approved"
+  = f.submit "No sorry, I really think it's disgusting"

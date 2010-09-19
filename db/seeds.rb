@@ -5,3 +5,33 @@
 #
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Mayor.create(:name => 'Daley', :city => cities.first)
+ingredients =  ["tomato", 
+                "salt", 
+                "nutella", 
+                "carrot", 
+                "rice", 
+                "anise", 
+                "avocado", 
+                "aubergine", 
+                "bread", 
+                "black bread",
+                "beans",
+                "beaf",
+                "blackberry",
+                "apple",
+                "caviar",
+                "cherry",
+                "choccolate",
+                "cola",
+                "corriander",
+                "pasta",
+                "olives",
+                "olive oil",
+                "cumin",
+                "cucumber",
+                "apricots"
+                ]
+                
+ingredients.each do |name|
+  Ingredient.find_or_create_by_name(name)
+end
