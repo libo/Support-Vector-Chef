@@ -6,6 +6,12 @@ It's using Support Vector Machine to understand if a recipe is comestible.
 Lots of inspiration comes from igvita article
 http://www.igvita.com/2008/01/07/support-vector-machines-svm-in-ruby/
 
+And these slides
+http://slidesha.re/98bXlB
+
+And if you need more reference I suggest reading:
+Programming Collective Intelligence http://oreilly.com/catalog/9780596529321
+
 
 == Getting Started
 
